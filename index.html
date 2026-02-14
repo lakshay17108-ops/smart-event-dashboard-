@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h1 class="main-title">Smart Event Dashboard</h1>
+    
+    <div id="dashboardContainer">
+        <div id="todoApp" class="form-panel">
+            <h3>Add New Event</h3>
+            <label>Event Title:</label>
+            <input id="inputBox" placeholder="Enter title..." />
+            
+            <label>Event Date:</label>
+            <input type="date" id="eventDate" />
+            
+            <label>Category:</label>
+            <select id="eventCategory">
+                <option value="Conference">Conference</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Meetup">Meetup</option>
+            </select>
+
+            <label>Description:</label>
+            <textarea id="eventDesc" placeholder="Describe the event..."></textarea>
+
+            <button id="addBtn">Add Event</button>
+        </div>
+
+        <div id="todoApp" class="list-panel">
+            <div class="list-header">
+                <h3>My Events</h3>
+                <button id="clearAllBtn" style="width: auto; border-radius: 5px; font-size: 12px; padding: 0 10px;">CLEAR ALL</button>
+            </div>
+            <div id="list">
+                <p id="emptyMsg">No events yet. Your schedule is clear!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script1.js"></script>
+</body>
+</html>
